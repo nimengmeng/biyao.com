@@ -154,11 +154,39 @@ $(window).scroll(function(){
     if(scrollTop > "800"){
         if($("#T_Title").hasClass("view-retract") == false){
             $("#T_Title").addClass("view-retract");
+            $(".view-shopCar").css({
+                display:"block"
+            })
         }
     }else{
         if($("#T_Title").hasClass("view-retract") == true){
             $("#T_Title").removeClass("view-retract");
         }
+    }
+})
+
+//右侧栏
+//二维码显示隐藏
+$(".rightBar-code").hover(function(){
+    $("#code-right").css({
+        display:"block",
+    })
+},function(){
+    $("#code-right").css({
+        display:"none",
+    })
+})
+
+//回到顶部
+$(window).scroll(function(){
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if(scrollTop > "30" ){
+        $(".rightBar-top").css({
+            display:"block"
+        })
+        $(".rightBar-top").on("click",function(){
+            document.documentElement.scrollTop = 0
+        })
     }
 })
 

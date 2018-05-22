@@ -208,6 +208,89 @@ body{background: #fff;}
     color: #333;
     font-size: 16px; 
 }
+/* 右边栏 */
+.rightBar {
+    position: fixed;
+    left: 50%;
+    bottom: 100px;
+    display: none;
+    z-index: 101;
+    margin-left: 610px;
+    height: 144px;
+}
+.rightBar li {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.rightBar-code {
+    position: relative;
+    background: url(http://static.biyao.com/pc/common/img/master/rightBar-code.png?v=biyao_fe900d3) 0 center no-repeat;
+}
+.rightBar-code:hover {
+    background: url(http://static1.biyao.com/pc/common/img/master/rightBar-codeActive.png?v=biyao_a0d97e9) 0 center no-repeat;
+}
+.rightBar-code div {
+    position: absolute;
+    top: -65px;
+    left: -310px;
+    display: none;
+    width: 301px;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px 4px rgba(0,0,0,.05);
+    background: #fff;
+}
+.rightBar-code span {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    z-index: 100;
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    margin-top: -14px;
+    background: url(http://static4.biyao.com/pc/common/img/master/right-triangle.png?v=biyao_ba531e2) no-repeat;
+    background-size: 100% 100%;
+}
+.rightBar-code dl {
+    float: left;
+    padding: 10px;
+}
+.rightBar-code .code-public {
+    padding: 4px 4px 10px;
+}
+.rightBar-code dt {
+    width: 130px;
+    height: 130px;
+    background: url(http://static1.biyao.com/pc/common/img/master/app.png?v=biyao_41bce2f) center center no-repeat;
+    background-size: 100% 100%;
+}
+.rightBar-code .code-public dt {
+    width: 143px;
+    height: 143px;
+    background: url(http://static3.biyao.com/pc/common/img/master/wxCode.jpg?v=biyao_79ba7c9) center center no-repeat;
+    background-size: 100% 100%;
+}
+.rightBar-code dd {
+    margin-top: 10px;
+    text-align: center;
+    color: #523669;
+    font-size: 14px;
+}
+.rightBar-code .code-public dd {
+    margin-top: 3px;
+}
+.rightBar-top {
+    display: none;
+    background: url(http://static2.biyao.com/pc/common/img/master/rightBar-top.png?v=biyao_43b4dc3) 0 center no-repeat;
+}
+.rightBar-top:hover {
+    background: url(http://static3.biyao.com/pc/common/img/master/rightBar-topActive.png?v=biyao_9ed53de) 0 center no-repeat;
+}
+
+
+
+
 /* 详情页内容开始 */
 .section{
     width: 1080px;
@@ -570,6 +653,7 @@ body{background: #fff;}
     background: #f7b200;
     cursor: pointer;
 }
+
 /* 内容 */
 .view-supplier {
     float: left;
@@ -773,6 +857,9 @@ div#vs_content dl>dd {
     height: 204px;
     vertical-align: middle;
     transition: transform .5s ease-in-out 0s;
+}
+.recommend-list a:hover img {
+    transform: scale3d(1.03,1.03,1);
 }
 .recommend-list dl {
     height: 60px;
