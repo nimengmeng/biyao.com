@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/login_regist.css" />
+</head>
+<body>
+    <div id="head">
+        <div class="header">
+            <h1><a href="index.html"></a></h1>
+            <p>欢迎来到必要，请<span>登录</span>|<span style="cursor: pointer">注册</span></p>
+        </div>
+    </div>
+    <div id="login_content">
+        <div>
+            <h4 class="login_title">
+                <b></b>用户登录<a class="pwd_login active" href="#">密码登录</a><a class="msg_login" href="#">短信登录</a>
+            </h4>
+            <ul>
+                    <li>
+                        <input type="text" id="username" maxlength="11" placeholder="请输入手机号" />
+                        <i class="account-error" style="display:none">请输入手机号</i>
+                    </li>
+                    <li>
+                        <input type="text" id="password" maxlength="32" placeholder="请输入登录密码" />
+                        <i class="account-error" style="display:none">请输入登录密码</i>
+                    </li>
+                    <li class="regist-agree">
+                        <span>
+                            <input type="checkbox" id="ckb" checked="checked" />下次自动登录
+                        </span>
+                        <a href="#">忘记密码</a>
+                    </li>
+                    <li>
+                        <button type="submit" id="btnregister">登录</button>
+                    </li>
+            </ul>
+            <div class="third-login">
+                <span>使用第三方账号登录：</span> <a href="#" class="weixin_login"></a> <a href="#" class="QQ_login"></a>
+            </div>
+            <p class="biyao-caution">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzM1Rjk4NzlEQkM2MTFFNzk2OTE4QkE0RjQzMzgzOTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzM1Rjk4N0FEQkM2MTFFNzk2OTE4QkE0RjQzMzgzOTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMzVGOTg3N0RCQzYxMUU3OTY5MThCQTRGNDMzODM5MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMzVGOTg3OERCQzYxMUU3OTY5MThCQTRGNDMzODM5MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqCqdbcAAAEMSURBVHjalJOxDsFQGIXbRrAjNhImCxISEonEU6jBZhJvYPASmCQGQ+slDCwiFg9gYCLYWXB+OZVK7m3iT760PT3n9ubv/c1XMWf4ygJN0AJVkAAXsAYOmIOn3+xVBmxAj8Y8MHl1qG/o+wmLsAJTUKP5xHcnPtf4fuUtEOICsp0BmBjBNQIP+isStCmoggeFNqHflnCbK6oqpdGHkpNwGSyM/2oJChKOg/Of4SuIWbxJakxHjS4fvEl4CxoaU1qj18FOwjMeAFW9NLr4ZxJ2QQR0FCZToXXod0M8qzY7GAbjgEZ1QZ/bfpq+wcjy5Nz5H5dsZpxm2WqUg7P/bCtgqkpeV9lUl3yn6i3AALlgPSjW8/lmAAAAAElFTkSuQmCC">
+                <span>必要不会以任何理由要求您转账汇款，谨防诈骗。</span>
+            </p>
+        </div>
+
+    </div>
+    <div id="footer">
+            <div class="foot">
+                <ul class="footer-serve">
+                    <li><img src="http://static2.biyao.com/pc/common/img/master/serve-make.png?v=biyao_af9ffe1" alt=""/><span>直连一线制造</span></li>
+                    <li><img src="http://static4.biyao.com/pc/common/img/master/serve-backage.png?v=biyao_e2de7c6" alt=""/><span>全品类包邮</span></li>
+                    <li><img src="http://static1.biyao.com/pc/common/img/master/serve-pay.png?v=biyao_77dd9d9" alt=""/><span>平台先行赔付</span></li>
+                    <li><img src="http://static3.biyao.com/pc/common/img/master/serve-refund.png?v=biyao_2c6f2c2" alt=""/><span>7天无忧退换货</span></li>
+                </ul>
+                <div class="footer-main">
+                    <div class="fmain_left">
+                        <ul class="footlist">
+                            <li>帮助中心</li>
+                            <li><a href="#">平台政策</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                        </ul>
+                        <ul class="footlist">
+                            <li>关注必要</li>
+                            <li><a href="#">官方微信</a></li>
+                            <li><a href="#">新浪微博</a></li>
+                        </ul>
+                        <ul class="footlist">
+                            <li>关于必要</li>
+                            <li><a href="#">了解必要</a></li>
+                            <li><a href="#">加入必要</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                        <ul class="footapp">
+                            <li>下载必要APP</li>
+                            <li><img src="http://static4.biyao.com/pc/common/img/master/app.png?v=biyao_41bce2f" alt=" " ></li>
+                        </ul>
+                    </div>
+                    <div class="fmain_right">
+                        <p>服务监督邮箱</p>
+                        <p class="fmremaill">cs@biyao.com</p>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p><span>Copyright © 2018, BIYAO.COM</span><span>珠海必要科技有限公司</span><span>粤网文〔2018〕0969-419号</span><span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496139" target="_blank">粤公网安备44049102496139号</a></span><span><a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备13088531号-2</a></span></p>
+                    <p><span><a href="http://static2.biyao.com/pc/www/img/footer/by_drugs.png" target="_blank">互联网药品信息服务资格证书</a></span><span><a href="http://static3.biyao.com/pc/www/img/footer/by_food.jpg" target="_blank">食品经营许可证</a></span></p>
+                    <p><span>公司地址：珠海市唐家湾镇哈工大路1号1栋E301-15</span><span>公司电话：0756-3635580</span></p>
+                    <p><span>必要商城提示您，产品“由某制造商出品”仅为陈述制造商既往生产经历，并不意味着相应产品与特定品牌产品相同或近似。</span></p>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/libs/jquery-3.3.1.js"></script>
+<script>
+
+
+
+
+
+
+
+
+
+    $(function(){
+        $("#btnregister").on("click",function(){
+            var username = $("#username").val();
+            var pwd = $("#password").val();
+            
+
+            var opt = {
+                url:"http://localhost/0509/user.php",
+                type:"POST",
+                data:{username:username,password:pwd,type:"login"}
+            }
+            $.ajax(opt)
+            .then(function(res){
+                //console.log(res);
+                if(res == "0"){
+                    alert("密码或用户名错误，登录失败！")
+                }else{
+                    alert("登录成功！即将为您跳转到首页");
+                    location.href="index.html";
+                }
+            })
+        })
+    })
+</script>
+</html>

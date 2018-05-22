@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/login_regist.css" />
+</head>
+<body>
+    <div id="head">
+        <div class="header">
+            <h1><a href="index.html"></a></h1>
+            <p>欢迎来到必要，请<span style="cursor: pointer">登录</span>|<span>注册</span></p>
+        </div>
+    </div>
+    <div id="regist_content">
+        <ul>
+            <li class="registtit"><b></b>新用户注册</li>
+            <li>
+                <input type="text" id="username" maxlength="11" placeholder="请输入手机号" />
+                <i class="account-error" style="display:none">请输入手机号</i>
+            </li>
+            <li>
+                <input type="text" id="password" maxlength="32" placeholder="请输入6-32位登录密码" />
+                <i class="account-error" style="display:none">请输入登录密码</i>
+            </li>
+            <li>
+                <input type="text" id="repeatPassword" maxlength="32" placeholder="请再次输入登录密码" />
+                <i class="account-error" style="display:none">请再次输入登录密码</i>
+            </li>
+            <li class="regist-agree">
+                <span>
+                    <input type="checkbox" id="ckb" checked="checked" /> 我已阅读并同意 
+                </span>
+                <a href="#">《必要服务协议》</a>
+            </li>
+            <li>
+                <button type="submit" id="btnregister">注册</button>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div class="foot">
+            <ul class="footer-serve">
+                <li><img src="http://static2.biyao.com/pc/common/img/master/serve-make.png?v=biyao_af9ffe1" alt=""/><span>直连一线制造</span></li>
+                <li><img src="http://static4.biyao.com/pc/common/img/master/serve-backage.png?v=biyao_e2de7c6" alt=""/><span>全品类包邮</span></li>
+                <li><img src="http://static1.biyao.com/pc/common/img/master/serve-pay.png?v=biyao_77dd9d9" alt=""/><span>平台先行赔付</span></li>
+                <li><img src="http://static3.biyao.com/pc/common/img/master/serve-refund.png?v=biyao_2c6f2c2" alt=""/><span>7天无忧退换货</span></li>
+            </ul>
+            <div class="footer-main">
+                <div class="fmain_left">
+                    <ul class="footlist">
+                        <li>帮助中心</li>
+                        <li><a href="#">平台政策</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                    </ul>
+                    <ul class="footlist">
+                        <li>关注必要</li>
+                        <li><a href="#">官方微信</a></li>
+                        <li><a href="#">新浪微博</a></li>
+                    </ul>
+                    <ul class="footlist">
+                        <li>关于必要</li>
+                        <li><a href="#">了解必要</a></li>
+                        <li><a href="#">加入必要</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                    <ul class="footapp">
+                        <li>下载必要APP</li>
+                        <li><img src="http://static4.biyao.com/pc/common/img/master/app.png?v=biyao_41bce2f" alt=" " ></li>
+                    </ul>
+                </div>
+                <div class="fmain_right">
+                    <p>服务监督邮箱</p>
+                    <p class="fmremaill">cs@biyao.com</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p><span>Copyright © 2018, BIYAO.COM</span><span>珠海必要科技有限公司</span><span>粤网文〔2018〕0969-419号</span><span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496139" target="_blank">粤公网安备44049102496139号</a></span><span><a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备13088531号-2</a></span></p>
+                <p><span><a href="http://static2.biyao.com/pc/www/img/footer/by_drugs.png" target="_blank">互联网药品信息服务资格证书</a></span><span><a href="http://static3.biyao.com/pc/www/img/footer/by_food.jpg" target="_blank">食品经营许可证</a></span></p>
+                <p><span>公司地址：珠海市唐家湾镇哈工大路1号1栋E301-15</span><span>公司电话：0756-3635580</span></p>
+                <p><span>必要商城提示您，产品“由某制造商出品”仅为陈述制造商既往生产经历，并不意味着相应产品与特定品牌产品相同或近似。</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/libs/jquery-3.3.1.js"></script>
+<script>
+   
+       
+
+
+
+    $(function(){
+
+        var username = $("#username").val();
+        var pwd = $("#password").val();
+
+        // var neceItemObject = {
+        //     userId:{
+        //         el:$("#username"),
+        //         reg:/^1(3|5|7|8)\d{9}$/,
+        //         hasVaild:false
+        //     },
+        //     password:{
+        //         el:$("#password"),
+        //         reg:/^[a-z0-9\u0021-\u002f]{6,20}$/i,
+		// 		hasVaild:false
+
+        //     }
+        // }
+        // function addOnlyState(bool){
+		// 	if(bool){
+		// 		$("#username").next("i").css({"display":"none"});
+		// 		el.toggleClass(" success");
+		// 	}else{
+		// 		el.next("i").css({"display":"block"});
+		// 		el.toggleClass(" error");
+		// 	}
+		// }
+        
+        //  //用户名的验证;
+		// var userEle = neceItemObject.userId.el;
+		// var userReg = /^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/;
+       // console.log(/^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/.test(username));
+		$("#username").blur(function(){
+            var username = $("#username").val();   
+            console.log(username);
+           // var pwd = $("#password").val();
+            var userReg = /^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/;
+            console.log(userReg.test(username),username);
+
+            //var string = this.val();
+			if(/^1[3|5|7|8]\d{9}$/.test(username) == "true"){
+                $("#username").next("i").css({"display":"none"});
+                $("#username").removeClass(" error");
+				$("#username").addClass(" success");
+            }else{
+                $("#username").next("i").css({"display":"block"});
+				$("#username").addClass(" error");
+            }
+		}.bind(this));
+
+
+        // //用户名的验证;
+		// var userEle = neceItemObject.userId.el;
+		// var userReg = neceItemObject.userId.reg;
+
+		// userEle.change(function(){
+		// 	//var string = this.val();
+		// 	addOnlyState(/^1(3|5|7|8)\d{9}$/.test(username));
+		// });
+
+        // //密码的验证;
+		// var pwEle = neceItemObject.password.el;
+		// var pwReg = neceItemObject.password.reg;
+
+		// pwEle.change(function(){
+		// 	//var string = this.val();
+		// 	addOnlyState(this,pwReg.test(pwd));
+		// });
+
+         $("#btnregister").on("click",function(){
+            var opt = {
+                url:"http://localhost/0509/user.php",
+                type:"POST",
+                data:{username:username,password:pwd,type:"register"}
+            }
+            $.ajax(opt)
+            .then(function(res){
+            // console.log(res);
+                if(res == "1"){
+                    alert("登录成功！即将为您跳转到首页");
+                    location.href="index.html";
+                    
+                }else{
+                    alert("用户名重名，注册失败！");
+                    
+                }
+            })
+        })
+})
+</script>
+</html>
