@@ -22,7 +22,12 @@
                 <li><a href="#">下载必要APP</a></li>
                 <li class="msg_center"><a href="#">消息中心<span>0</span></a></li>
                 <li class="kf_fuwu"><a href="#">客服服务<i></i></a></li>
-                <li class="user_shopcar"><a href="#" >购物车<span>0</span></a></li>
+                <li class="user_shopcar">
+                    <a href="CarDetail.html">
+                        购物车
+                        <span>0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -42,6 +47,25 @@
            
         </div>
     </div>
+
+    <!-- 右边栏 -->
+    <ul class="rightBar" style="margin-left:550px;display:block">
+        <li class="rightBar-code">
+            <div id="code-right">
+                <span></span>
+                <dl>
+                    <dt></dt>
+                    <dd>扫码关注必要公众号</dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>扫码下载必要APP</dd>
+                </dl>
+            </div>
+        </li>
+        <li class="rightBar-top">
+        </li>
+    </ul>
 
     <!-- 导航 首页》男装》男士内搭 -->
     <div id="bread">
@@ -127,117 +151,6 @@
     </div> -->
 </body>
 <script src="js/libs/jquery-3.3.1.js"></script>
-<script>
-    $(function(){
-        // var opt = {
-        //     url:"http://mce.meilishuo.com/jsonp/get/3?offset=0&frame=0&trace=0&limit=10&endId=0&pid=106888&_=1526369583128",
-        //     dataType:"jsonp",
-        //     data:{page:1}
-        // }
-        // $.ajax(opt)
-        // .then(function(res){
-        //     console.log(res);
-        // })
-
-
-       function WaterFall(url,main_select){
-           if(!url || !main_select) return;
-           this.url = url;
-           this.main_select = $(main_select);
-           this.init();
-       }
-       WaterFall.prototype = {
-           constructor:WaterFall,
-           init(){
-               this.page = 1;
-               this.load_data()
-               .then(function(res){
-                   this.json = res.data.list;
-                   //console.log(res);
-                   this.render_page();
-                   this.sort_item();
-               }.bind(this))
-               .fail(function(def,type,err_msg){
-                   //this.load_err();
-               })
-               $(document).on("scroll",$.proxy(this.is_load,this));
-           },
-           load_data(){
-               this.opt = {
-                   url:this.url,
-                   dataType:"jsonp",
-                   data:{page:this.page},
-                   statusCode:{
-                       404:function(){
-                           alert("page no found");
-                       },
-                       403:function(){
-                           alert("不允许访问！");
-                       }
-                   }
-               };
-               return $.ajax(this.opt)
-           },
-           render_page(){
-               //拼接字符串
-               this.html = "<ul>";
-               this.json.forEach(function(item){
-                console.log(item);
-                this.html += `<li>
-                                <a href="#">
-                                    <img src=${item.image} />
-                                    <h3>${item.title}</h3>
-                                    <p>￥${item.price}</p>
-                                </a> 
-                                <button data-id=${item.adId}>加入购物车</button>
-                             </li>`
-               }.bind(this));
-               this.html += "</ul>";
-               this.main_select.html(this.main_select.html() + this.html);
-           },
-           sort_item(){
-               this.children = this.main_select.find("li");
-               var heightArray = [];
-               for(var i = 0;i<this.children.length;i++){
-                   if(i<4){
-                       heightArray.push($(this.children[i]).height());  
-                   }else{
-                       var minHeight = Math.min.apply(false,heightArray);
-                       var minIndex = heightArray.indexOf(minHeight);
-                       this.children.eq(i).css({
-                           position:"absolute",
-                           left:this.children.eq(minIndex).position().left + 5,
-                           top:minHeight += 15
-                       })
-                       heightArray[minIndex] = minHeight + this.children.eq(i).height();
-                   }
-               }
-           },
-           load_err(){
-               alert("出现错误！");
-           },
-           is_load(){
-               this.scrollTop = $("html,body").scrollTop();
-               this.clientHeight = document.documentElement.clientHeight;
-               this.lastTop = this.main_select.find("li").eq(this.main_select.find("li").length - 1).position().top;
-               console.log(this.lastTop);
-               this.loading = false; //是否符合加载条件
-               if(this.scrollTop +this.clientHeight >= this.lastTop){
-                   this.loading = true;
-               }
-               if(!this.loading || this.loading_msg) return 0;
-               this.loading_msg = true;
-               this.page ++;
-               this.load_data()
-               .then(function(res){
-                   this.json =res.data.list;
-                   this.render_page();
-                   this.sort_item();
-                   this.loading_msg = false;
-               }.bind(this))
-           }
-       }
-       new WaterFall("http://mce.meilishuo.com/jsonp/get/3?offset=0&frame=0&trace=0&limit=10&endId=0&pid=106888&_=1526369583128","#catecontent")
-    })
-</script>
+<script src="js/libs/jquery.cookie.js"></script>
+<script src="js/category.js"></script>
 </html>

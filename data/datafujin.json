@@ -1,0 +1,62 @@
+{
+    "moduleType": "6",
+    "moduleInfo": {
+        "moduleImage": "http://bfs.biyao.com/group1/M00/29/3E/rBACW1pVhh-ARZZJAAADnlzWOQI803.jpg",
+        "moduleTitle": "附近的人都在买",
+        "modelId": "3",
+        "moduleItems": [
+            {
+                "ext": {
+                    "suId": "1300625278010100001"
+                },
+                "itemName": "天然舒爽桑蚕丝刺绣T恤",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/37/E9/rBACYVrycSKAOOLkAACD3Cv2pGY880.jpg",
+                "itemPrice": "259",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278520-34dc461de9d32e82&_pid=1300625278&_pos=0&_zone=nb_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300945078000100001"
+                },
+                "itemName": "A类移圈网眼儿童袜6双装",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/33/C3/rBACW1rJmtiANUr4AACXXIXqQo0084.jpg",
+                "itemPrice": "65",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278520-34dc461de9d32e82&_pid=1300945078&_pos=1&_zone=nb_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300865232000100001"
+                },
+                "itemName": "肤色软模杯无钢圈美背套装",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/38/44/rBACYVr1MlGAK2hVAABQ_6Xcvjc873.jpg",
+                "itemPrice": "179",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278520-34dc461de9d32e82&_pid=1300865232&_pos=2&_zone=nb_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300865215060100001"
+                },
+                "itemName": "无钢圈美背 粉灰肤3色选",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/35/3C/rBACYVrXRRGAE0yEAAB05tRZKqU476.jpg",
+                "itemPrice": "159",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278520-34dc461de9d32e82&_pid=1300865215&_pos=3&_zone=nb_home"
+            },
+            {
+                "ext": {
+                    "suId": "1301485005080900001"
+                },
+                "itemName": "S.S.绗绣全荞麦枕",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/01/F7/rBACW1kT4X2ATSuRAAA7qdy00fE775.jpg",
+                "itemPrice": "99",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278520-34dc461de9d32e82&_pid=1301485005&_pos=4&_zone=nb_home"
+            }
+        ],
+        "webpImageUrl": "http://bfs.biyao.com/group1/M00/29/3E/rBACW1pVhh-ARZZJAAADnlzWOQI803.webp"
+    },
+    "templateId": 144
+}

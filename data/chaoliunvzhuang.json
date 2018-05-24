@@ -1,0 +1,180 @@
+{
+    "moduleType": "3",
+    "moduleInfo": {
+        "ext": {
+            "categoryID": "294"
+        },
+        "moduleImage": "http://bfs.biyao.com/group1/M00/38/DE/rBACW1r6kbmAPWFRAABrsinrATM133.jpg",
+        "manufacturers": "MaxMara、Diesel等",
+        "moduleTitle": "潮流女装",
+        "moduleItems": [
+            {
+                "ext": {
+                    "itemName": "丝光棉黑白T恤（两件装）",
+                    "isModel": "0",
+                    "supplierID": 130090,
+                    "itemPrice": "199",
+                    "isNew": 0,
+                    "suId": "1300905014010100001",
+                    "salePoint": "100%天然丝光棉 简洁大方 优雅舒适",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/2E/9A/rBACVFqowueAXgrKAACY9WmRwmw901.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "宽松真丝碎花桑蚕丝连衣裙",
+                    "isModel": "0",
+                    "supplierID": 130146,
+                    "itemPrice": "499",
+                    "isNew": 0,
+                    "suId": "1301465130010100001",
+                    "salePoint": "喇叭袖V领碎花真丝连衣裙,宽松舒适,桑蚕丝柔软透气",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/35/ED/rBACW1rdmZOAMguyAACOdN3wEtk777.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "藏青色修身弹力裤",
+                    "isModel": "0",
+                    "supplierID": 130043,
+                    "itemPrice": "249",
+                    "isNew": 0,
+                    "suId": "1300435346010100001",
+                    "salePoint": "优良的弹性包容性更大，不挑身材",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/39/2D/rBACYVr9R_WAL1oEAABuqu86LeU658.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "大牌面料针织蝙蝠袖条纹T",
+                    "isModel": "0",
+                    "supplierID": 130193,
+                    "itemPrice": "149",
+                    "isNew": 0,
+                    "suId": "1301935057010100001",
+                    "salePoint": "国际品牌共享面料，款式时尚靓丽，版型宽松随意，百搭好穿",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/33/12/rBACVFrT_-2AaRVuAABXbyXFZVM483.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "长款纯色休闲开衫",
+                    "isModel": "0",
+                    "supplierID": 130107,
+                    "itemPrice": "299",
+                    "isNew": 0,
+                    "suId": "1301075261010100001",
+                    "salePoint": "精工细织，柔韧有弹性，透气性好，穿着凉爽",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/37/F4/rBACVFsCNLaAL5eLAAA_1Lkd-y8574.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "露肩高腰荷叶袖连衣裙",
+                    "isModel": "0",
+                    "supplierID": 130181,
+                    "itemPrice": "299",
+                    "isNew": 0,
+                    "suId": "1301815156010100001",
+                    "salePoint": "小性感露肩，恰到好处的镂空露肩，荷叶边修饰，俏皮性感",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/36/93/rBACW1ri2ISAEtamAAAwGDURGHY425.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "蕾丝拼接印花纯棉T恤",
+                    "isModel": "0",
+                    "supplierID": 130200,
+                    "itemPrice": "169",
+                    "isNew": 0,
+                    "suId": "1302005053030100001",
+                    "salePoint": "趣味的胶印印花与蕾丝相交叠，俏皮甜美，为衣身增加亮点。",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/39/A7/rBACW1sCLlaAPQN_AABY-6NjCZI026.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "无痕速干修身吊带打底裙",
+                    "isModel": "0",
+                    "supplierID": 130177,
+                    "itemPrice": "199",
+                    "isNew": 0,
+                    "suId": "1301775165060100001",
+                    "salePoint": "经典的黑色+米色组合两件套，百搭永不过时",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/2E/53/rBACW1qTbn-AbwjzAACPRrEn5c4431.jpg",
+                "clickType": "3"
+            }
+        ],
+        "webpImageUrl": "http://bfs.biyao.com/group1/M00/38/D7/rBACYVr6kbuAW22iAACKymCnT5U076.webp",
+        "title": "潮流女装",
+        "webpNewImageUrl": "http://bfs.biyao.com/group1/M00/38/DE/rBACW1r6kbmAPWFRAABrsinrATM133.webp",
+        "ancestorCategoryIds": "294,299",
+        "moduleBrand": "制造商直供",
+        "backendCategoryIdList": [
+            6000221,
+            80032310,
+            80032302,
+            80032323,
+            32302,
+            6000215,
+            80032301,
+            80032303,
+            80032308,
+            80032318,
+            32301,
+            80032316,
+            80032317,
+            80032304,
+            32303,
+            6000217,
+            80032305,
+            80032306,
+            80032307,
+            80032313,
+            80032314,
+            80032315,
+            80032319,
+            6000050,
+            80032311,
+            80032312,
+            80032300,
+            80032322,
+            6000218,
+            6000219,
+            6000220,
+            80032309,
+            80032320,
+            80032321,
+            80040100,
+            80040101
+        ],
+        "clickType": "4",
+        "categoryID": "294",
+        "newImageUrl": "http://bfs.biyao.com/group1/M00/38/DE/rBACW1r6kbmAPWFRAABrsinrATM133.jpg"
+    },
+    "templateId": 2
+}

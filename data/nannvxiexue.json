@@ -1,0 +1,166 @@
+{
+    "moduleType": "3",
+    "moduleInfo": {
+        "ext": {
+            "categoryID": "35"
+        },
+        "moduleImage": "http://bfs.biyao.com/group1/M00/38/D7/rBACYVr6kemAHXmDAAB9YdS-AzI040.jpg",
+        "manufacturers": "LACOSTE等",
+        "moduleTitle": "男女鞋靴",
+        "moduleItems": [
+            {
+                "ext": {
+                    "itemName": "钻点结扣凉鞋",
+                    "isModel": "0",
+                    "supplierID": 130036,
+                    "itemPrice": "259",
+                    "isNew": 0,
+                    "suId": "1300365138060100001",
+                    "salePoint": "质感五金，潮流点钻装饰，精致鞋型显脚小",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/38/F4/rBACYVr7yymABZYFAACa1VHjllE709.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "罗马中跟女鞋 55mm",
+                    "isModel": "0",
+                    "supplierID": 130045,
+                    "itemPrice": "379",
+                    "isNew": 0,
+                    "suId": "1300455157010100001",
+                    "salePoint": "舒适中跟  穿着不累脚",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/34/D8/rBACW1rUVOKAetYYAABhiyH9fT0047.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "男士时尚沙滩凉鞋",
+                    "isModel": "0",
+                    "supplierID": 130163,
+                    "itemPrice": "199",
+                    "isNew": 0,
+                    "suId": "1301635048010100001",
+                    "salePoint": "采用牛磨砂皮，特殊包头设计，鞋款时尚特别；",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/38/3C/rBACW1r06mqAN-HhAACSRnLN3is491.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "四季休闲健步鞋",
+                    "isModel": "0",
+                    "supplierID": 130124,
+                    "itemPrice": "169",
+                    "isNew": 0,
+                    "suId": "1301245023010100001",
+                    "salePoint": "轻盈透气 柔软舒适 穿脱方便",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/1A/33/rBACW1mSwFKAORPbAABunnFNVxg560.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "春夏一脚蹬男鞋",
+                    "isModel": "0",
+                    "supplierID": 130116,
+                    "itemPrice": "169",
+                    "isNew": 0,
+                    "suId": "1301165062010100001",
+                    "salePoint": "超高性价比 国际大厂品质 经典Slip-on款式",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/36/88/rBACW1rimtSAYXPpAACGOMiAm5E091.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "平头冲孔德比鞋",
+                    "isModel": "0",
+                    "supplierID": 130036,
+                    "itemPrice": "419",
+                    "isNew": 0,
+                    "suId": "1300365129060100001",
+                    "salePoint": "粒面头层牛皮采用冲孔工艺，轻软透气更适合炎热夏季",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/37/3F/rBACVFr7l-WAHTtZAACYmdJDPJg187.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "环扣装饰轻便女鞋 10mm",
+                    "isModel": "0",
+                    "supplierID": 130045,
+                    "itemPrice": "379",
+                    "isNew": 0,
+                    "suId": "1300455072040100001",
+                    "salePoint": "柔软后包设计 一鞋两穿",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/17/DC/rBACW1l2s2iAWAtaAABAHi8FXhk182.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "休闲舒适户外魔术贴凉鞋男",
+                    "isModel": "0",
+                    "supplierID": 130067,
+                    "itemPrice": "199",
+                    "isNew": 0,
+                    "suId": "1300675032010100001",
+                    "salePoint": "可调节魔术贴 · 缓震EVA中底 · 简洁设计 · 出色脚感",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/36/A2/rBACYVrj2YGAbH_sAABvb1_EaW0373.jpg",
+                "clickType": "3"
+            }
+        ],
+        "webpImageUrl": "http://bfs.biyao.com/group1/M00/37/28/rBACVFr6keuAA7CvAACt0-2wIXI804.webp",
+        "title": "男女鞋靴",
+        "webpNewImageUrl": "http://bfs.biyao.com/group1/M00/38/D7/rBACYVr6kemAHXmDAAB9YdS-AzI040.webp",
+        "ancestorCategoryIds": "35,38",
+        "moduleBrand": "制造商直供",
+        "backendCategoryIdList": [
+            94,
+            28,
+            29,
+            93,
+            96,
+            1001,
+            80001001,
+            80001000,
+            80710401,
+            95,
+            97,
+            1502,
+            80190004,
+            115,
+            80001501,
+            111,
+            1503,
+            1504,
+            114,
+            80001500,
+            1501,
+            80190003
+        ],
+        "clickType": "4",
+        "categoryID": "35",
+        "newImageUrl": "http://bfs.biyao.com/group1/M00/38/D7/rBACYVr6kemAHXmDAAB9YdS-AzI040.jpg"
+    },
+    "templateId": 12
+}

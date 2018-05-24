@@ -1,0 +1,62 @@
+{
+    "moduleType": "6",
+    "moduleInfo": {
+        "moduleImage": "http://bfs.biyao.com/group1/M00/23/47/rBACVFovy0uAaYE9AAADo9inDPQ131.jpg",
+        "moduleTitle": "猜你喜欢",
+        "modelId": "1",
+        "moduleItems": [
+            {
+                "ext": {
+                    "suId": "1301775203010100001"
+                },
+                "itemName": "百搭必备V领棉T恤（两件）",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/38/26/rBACYVr0F0mAO_WrAACcXRMaiGU348.jpg",
+                "itemPrice": "199",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278518-a424192423570f6a&_pid=1301775203&_pos=0&_zone=gyl_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300225035000000012"
+                },
+                "itemName": "超薄纯钛学生款眼镜-A",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/34/44/rBACW1rNmeOADJoBAAA4uGSorUE446.jpg",
+                "itemPrice": "279",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278518-a424192423570f6a&_pid=1300225035&_pos=1&_zone=gyl_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300935056110200001"
+                },
+                "itemName": "春夏 透气抗皱 休闲西裤",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/0D/88/rBACVFkZApGANQsFAACG_rrEzqw123.jpg",
+                "itemPrice": "428",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278518-a424192423570f6a&_pid=1300935056&_pos=2&_zone=gyl_home"
+            },
+            {
+                "ext": {
+                    "suId": "1301565107010100001"
+                },
+                "itemName": "闪电印花男士短T",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/38/BC/rBACW1r5dMOAOLx7AACIsX-uBEE631.jpg",
+                "itemPrice": "149",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278518-a424192423570f6a&_pid=1301565107&_pos=3&_zone=gyl_home"
+            },
+            {
+                "ext": {
+                    "suId": "1300225070000000002"
+                },
+                "itemName": "威廉.板材光学镜",
+                "imageUrl": "http://bfs.biyao.com/group1/M00/34/3C/rBACYVrNl7qAdCNYAABbeRrtjgk846.jpg",
+                "itemPrice": "249",
+                "clickType": "1",
+                "urlParam": "_pvid=417b8c9c-00cb-4a91-b058-f6e255500d72&_sid=3-1526997278518-a424192423570f6a&_pid=1300225070&_pos=4&_zone=gyl_home"
+            }
+        ],
+        "webpImageUrl": "http://bfs.biyao.com/group1/M00/23/47/rBACVFovy0uAaYE9AAADo9inDPQ131.webp"
+    },
+    "templateId": 117
+}

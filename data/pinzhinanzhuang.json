@@ -1,0 +1,170 @@
+{
+    "moduleType": "3",
+    "moduleInfo": {
+        "ext": {
+            "categoryID": "279"
+        },
+        "moduleImage": "http://bfs.biyao.com/group1/M00/37/28/rBACVFr6kayAM3yVAABIMcfOcv0761.jpg",
+        "manufacturers": "Hugo Boss、PRADA等",
+        "moduleTitle": "品质男装",
+        "moduleItems": [
+            {
+                "ext": {
+                    "itemName": "SofTAL免烫短袖POLO衫",
+                    "isModel": "0",
+                    "supplierID": 130083,
+                    "itemPrice": "189",
+                    "isNew": 0,
+                    "suId": "1300835010100100001",
+                    "salePoint": "100%长绒棉，免烫，抗缩水性强，不易褪色",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/23/C8/rBACW1oc4myAJV85AACPgeX4-WQ853.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "凉感功能免烫商务短袖衬衫",
+                    "isModel": "0",
+                    "supplierID": 130106,
+                    "itemPrice": "209",
+                    "isNew": 0,
+                    "suId": "1301065300010100001",
+                    "salePoint": "凉感功能免烫衬衫，具有良好的导热性能，能将人体热量迅速排出，穿着凉爽舒适",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/35/22/rBACW1rWqXCAQoInAAB2IRb93tw688.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "进口面料轻薄修身牛仔裤",
+                    "isModel": "0",
+                    "supplierID": 130053,
+                    "itemPrice": "299",
+                    "isNew": 0,
+                    "suId": "1300535138030100001",
+                    "salePoint": "进口土耳其ORTA牛仔布，拥有轻薄透气、健康环保、高弹力等卓越性能",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/30/EB/rBACVFq8wCCAfXpiAACMwAzQRiQ427.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "60S细纱织丝光珠地POLO衫",
+                    "isModel": "0",
+                    "supplierID": 130062,
+                    "itemPrice": "139",
+                    "isNew": 0,
+                    "suId": "1300625267010100001",
+                    "salePoint": "双面条纹撞色领，可翻领可立领，60支大眼珠地绵柔又透气",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/35/EC/rBACYVrdqZqAJmPWAACRJy0tELU738.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "MARLANE弹力透气修身西裤",
+                    "isModel": "0",
+                    "supplierID": 130218,
+                    "itemPrice": "490",
+                    "isNew": 0,
+                    "suId": "1302185010010100001",
+                    "salePoint": "羊毛加莱卡面料具有弹力和快速自然回弹功能",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/38/91/rBACW1r44aCAQfsMAABgHb5GnWY699.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "弹力麻男士V领衫",
+                    "isModel": "0",
+                    "supplierID": 130141,
+                    "itemPrice": "199",
+                    "isNew": 0,
+                    "suId": "1301415125010100001",
+                    "salePoint": "清爽弹力麻面料，具有良好的亲肤性，夏季穿着更凉爽。",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/38/9F/rBACW1r5FS6AWjWmAACX1Z_PLO0353.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "灰条纹 冷感控温 休闲西裤",
+                    "isModel": "0",
+                    "supplierID": 130093,
+                    "itemPrice": "339",
+                    "isNew": 0,
+                    "suId": "1300935160010100001",
+                    "salePoint": "冷感功能性面料，半松紧裤腰，松紧裤脚，包容度UP,UP,UP~",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/36/38/rBACVFryaZeAVkUxAAByY1fZ0b0560.jpg",
+                "clickType": "3"
+            },
+            {
+                "ext": {
+                    "itemName": "MARLAN透气商旅便西",
+                    "isModel": "0",
+                    "supplierID": 130218,
+                    "itemPrice": "1390",
+                    "isNew": 0,
+                    "suId": "1302185011010100001",
+                    "salePoint": "轻薄垫肩加轻薄胸衬和半里设计最大的程度的减轻产品重量，将轻薄透气做到极致",
+                    "isGroup": 0,
+                    "activityType": null
+                },
+                "image": "http://bfs.biyao.com/group1/M00/37/5F/rBACVFr8282AEX4XAAB_9z13f6c468.jpg",
+                "clickType": "3"
+            }
+        ],
+        "webpImageUrl": "http://bfs.biyao.com/group1/M00/37/28/rBACVFr6ka-AClDSAABaomsJBbM252.webp",
+        "title": "品质男装",
+        "webpNewImageUrl": "http://bfs.biyao.com/group1/M00/37/28/rBACVFr6kayAM3yVAABIMcfOcv0761.webp",
+        "ancestorCategoryIds": "279,280",
+        "moduleBrand": "制造商直供",
+        "backendCategoryIdList": [
+            32202,
+            32201,
+            80032200,
+            80032207,
+            32205,
+            80032213,
+            80032214,
+            80032205,
+            80032206,
+            32204,
+            80032211,
+            80032203,
+            80032204,
+            32203,
+            80032215,
+            190206,
+            80032201,
+            80032202,
+            80032218,
+            80032219,
+            80032208,
+            32206,
+            80032209,
+            80032217,
+            80032210,
+            80032212
+        ],
+        "clickType": "4",
+        "categoryID": "279",
+        "newImageUrl": "http://bfs.biyao.com/group1/M00/37/28/rBACVFr6kayAM3yVAABIMcfOcv0761.jpg"
+    },
+    "templateId": 1
+}
