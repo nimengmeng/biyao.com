@@ -88,81 +88,11 @@
 </body>
 <script src="js/libs/jquery-3.3.1.js"></script>
 <script>
-   
-       
-
-
-
     $(function(){
-
-        var username = $("#username").val();
-        var pwd = $("#password").val();
-
-        // var neceItemObject = {
-        //     userId:{
-        //         el:$("#username"),
-        //         reg:/^1(3|5|7|8)\d{9}$/,
-        //         hasVaild:false
-        //     },
-        //     password:{
-        //         el:$("#password"),
-        //         reg:/^[a-z0-9\u0021-\u002f]{6,20}$/i,
-		// 		hasVaild:false
-
-        //     }
-        // }
-        // function addOnlyState(bool){
-		// 	if(bool){
-		// 		$("#username").next("i").css({"display":"none"});
-		// 		el.toggleClass(" success");
-		// 	}else{
-		// 		el.next("i").css({"display":"block"});
-		// 		el.toggleClass(" error");
-		// 	}
-		// }
-        
-        //  //用户名的验证;
-		// var userEle = neceItemObject.userId.el;
-		// var userReg = /^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/;
-       // console.log(/^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/.test(username));
-		$("#username").blur(function(){
-            var username = $("#username").val();   
-            console.log(username);
-           // var pwd = $("#password").val();
-            var userReg = /^(\+86-)?(13[0-9]|15[123567890]|18[567890])[12345]\d{7}$/;
-            console.log(userReg.test(username),username);
-
-            //var string = this.val();
-			if(/^1[3|5|7|8]\d{9}$/.test(username) == "true"){
-                $("#username").next("i").css({"display":"none"});
-                $("#username").removeClass(" error");
-				$("#username").addClass(" success");
-            }else{
-                $("#username").next("i").css({"display":"block"});
-				$("#username").addClass(" error");
-            }
-		}.bind(this));
-
-
-        // //用户名的验证;
-		// var userEle = neceItemObject.userId.el;
-		// var userReg = neceItemObject.userId.reg;
-
-		// userEle.change(function(){
-		// 	//var string = this.val();
-		// 	addOnlyState(/^1(3|5|7|8)\d{9}$/.test(username));
-		// });
-
-        // //密码的验证;
-		// var pwEle = neceItemObject.password.el;
-		// var pwReg = neceItemObject.password.reg;
-
-		// pwEle.change(function(){
-		// 	//var string = this.val();
-		// 	addOnlyState(this,pwReg.test(pwd));
-		// });
-
          $("#btnregister").on("click",function(){
+            var username = $("#username").val();
+            var pwd = $("#password").val();
+            //console.log(username,pwd);
             var opt = {
                 url:"http://localhost/0509/user.php",
                 type:"POST",
@@ -170,9 +100,9 @@
             }
             $.ajax(opt)
             .then(function(res){
-            // console.log(res);
+             console.log(res);
                 if(res == "1"){
-                    alert("登录成功！即将为您跳转到首页");
+                    alert("注册成功！即将为您跳转到首页");
                     location.href="index.html";
                     
                 }else{

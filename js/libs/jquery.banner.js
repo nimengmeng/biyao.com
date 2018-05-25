@@ -25,11 +25,17 @@
 // 2. 渲染元素;
 // 3. 做所有的动画功能;
 // 4. 下标处理;
-;+function($){
-    $.fn.gpBanner = function(banner_selector,options){
-        
-        new Banner(banner_selector,options,this);
+
+
+;+function(factory){
+    //AMD判断;
+    if(typeof define === "function" && define.amd){
+       define(["jquery"],factory)
+    }else{
+        factory(jQuery);
     }
+}(function($){
+
 
     function Banner(banner_selector,options,base_ele){ 
         this.init(banner_selector,options,base_ele);
@@ -236,6 +242,12 @@
             this.bannerWrapper.trigger("mouseleave")
         }
     }
-}(jQuery);
+
+    // $.fn.gpBanner = function(banner_selector,options){   
+    //    new Banner(banner_selector,options,this);
+    // }
+    $.fn.gpBanner = Banner;
+    return Banner
+});
 
 

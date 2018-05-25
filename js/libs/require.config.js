@@ -1,7 +1,9 @@
 requirejs.config({
     paths:{
-        "jquery":"./src/libs/jquery-3.3.1",
-        "pagination":"./src/libs/jquery.pagination",
-        "index":"./src/model/index"
+        "jquery":"./js/libs/jquery-3.3.1",
+        "banner":"./js/libs/jquery.banner",
+        "data":"./js/libs/data",
+        "fujin":"./js/fujin",
+        "index":"./js/index"
     }
 })

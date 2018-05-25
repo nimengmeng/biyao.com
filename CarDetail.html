@@ -13,7 +13,7 @@
     <div id="head">
             <div class="header">
                 <ul class="head_nav">
-                    <li><a href="###">首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li><a href="#">平台政策</a></li>
                     <li class="border0"><a href="#">商家入驻</a></li>
                 </ul>
@@ -22,7 +22,7 @@
                     <li><a href="#">下载必要APP</a></li>
                     <li class="msg_center"><a href="#">消息中心<span>0</span></a></li>
                     <li class="kf_fuwu"><a href="#">客服服务<i></i></a></li>
-                    <li class="user_shopcar"><a href="#" >购物车<span>0</span></a></li>
+                    <li class="user_shopcar"><a href="#" >购物车<span></span></a></li>
                 </ul>
             </div>
         </div>
@@ -66,87 +66,58 @@
 <script src="js/libs/jquery-3.3.1.js"></script>
 <script src="js/libs/jquery.cookie.js"></script>
 <script>
-    // $(function(){
-    //     var shoppingCarDetail = new ShoppingCarDetail("http://mce.meilishuo.com/jsonp/get/3?offset=0&frame=0&trace=0&limit=10&endId=0&pid=106888&_=1526369583128",".container")
-    // })
+    $(function(){
+        $.ajax({url:"http://mce.meilishuo.com/jsonp/get/3?offset=0&frame=0&trace=0&limit=10&endId=0&pid=106888&_=1526369583128",dataType:"jsonp"})
+        .then(function(res){
+            var json = res.data.list;
+            // console.log(json); 
+            rander(json);
+            
+        })
+    })
 
-    // function ShoppingCarDetail(url,main_select){
-    //     if(!url || !main_select) return;
-    //     this.url = url;
-    //     this.main_select = $(main_select);
-    //     this.init();
-    // }
-    // ShoppingCarDetail.prototype = {
-    //     constructor:ShoppingCarDetail,
-    //     init(){
-    //         this.load_data()
-    //         .then(function(res){
-    //             this.json = res.data.list;
-    //             this.render_page();
-    //         }.bind(this))
-    //     },
-    //     load_data(){
-    //         this.opt = {
-    //            url:this.url,
-    //            dataType:"jsonp",
-    //            data:{page:this.page},
-    //            statusCode:{
-    //                404:function(){
-    //                    alert("page no found");
-    //                },
-    //                403:function(){
-    //                    alert("不允许访问！");
-    //                }
-    //            }
-    //         };
-    //         return $.ajax(this.opt)
-    //     },
-    //     render_page(){
-    //         this.html = "ul";
-    //         this.json.forEach(function(item) {
-    //             this.html += `<li class="item">
-                            
-    //                         <div class="msg">
-    //                             <img src=${item.image} alt="" />
-    //                             <h5>${item.title}</h5>
-    //                             <h5>${item.price}</h5>
-    //                         </div>
-                        
-    //                         <div class="operation">
-    //                                 <button>-</button>
-    //                                 <input type="text" value="10">
-    //                                 <button>+</button>
-    //                         </div>
-    //                         <a href="#javascript" class="delete">删除</a>
-    //                     </li>`
-    //         }.bind(this));
-    //         this.html += "</ul>";
-    //         this.main_select.html(this.main_select.html() + this.html);
-    //     }
-    // }
-    var oList = $(".list");
-
-    function getCar(){
-        var carListString = $.cookie("shopCar");
-        //console.log(carListString);
-        var carListArray = JSON.parse(carListString);
-        console.log(carListArray);
-        var carArray = [];
-        for(var i =0;i<carListArray.length;i++){
-           var itemId = carListArray[i].id;
-           //console.log(itemId)
-        //    console.log(fromIdToItem(itemId,json.subjects))
-        //    var itemobj = fromIdToItem(itemId,json.subjects)
-        }
+    function rander(json){
+        var shopArray = JSON.parse($.cookie("shopCar"));
+        // console.log(shopArray);
+        var html = "";
+        json.forEach(function(item){
+            shopArray.forEach(function(list){
+                if(item.item_id == list.id){
+                    html +=`<li class="item" data_id="${item.item_id}">
+                                <div class="msg">
+                                    <img src=${item.image} alt="">
+                                    <h5>${item.title}</h5>
+                                </div>
+                                <div class="operation">
+                                        <button>-</button>
+                                        <input type="text" class="txt" value=${list.num}>
+                                        <button class="addnum">+</button>
+                                </div>
+                                <a href="#javascript" class="delete">删除</a>
+                            </li>
+                            `
+                }
+            })
+        })
+        $("#list").html(html);
+        clearShop();
     }
-   getCar()
-    // function rendering()
-    function fromIdToItem(id,json){
-        for(var i =0;i<json.length;i++){
-            if(json[i].id == id){
-                return json[i];
-            }    
-        }
+
+    function clearShop(){
+        $(".delete").on("click",function(){
+            var isRemove = confirm("确认删除该商品？");
+            if(!isRemove) return 0;
+
+            var delet_id = $(this).parent().attr("data_id");
+            var shopArray = JSON.parse($.cookie("shopCar"));
+            shopArray.forEach(function(item,index){
+                if(item.id == delet_id){
+                    shopArray.splice(index,1);
+                }
+            })
+            $.cookie("shopCar",JSON.stringify(shopArray));
+            location.reload();         
+        })
     }
 
 </script>

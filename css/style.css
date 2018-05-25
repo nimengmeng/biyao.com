@@ -300,9 +300,15 @@
     left: 50%;
     margin-left: -540px;
 }
-
+.gp6-banner-container{
+    width: 1080px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
 /* 导航 */
-.navlist{
+.nav-list{
     position: absolute;
     left: 0;
     top: 0;
@@ -349,6 +355,13 @@
     color: #333;
     vertical-align: middle;
 }
+.nav-sub>i {
+    display: inline-block;
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+}
 .nav-sub ul{
     float: right;
     width: 567px;
@@ -361,15 +374,14 @@
     margin: 0 20px 15px 0;
     line-height: 20px;
 }
+.nav-item a {
+    text-align: center;
+    color: gray;
+}
+
 
 /* 轮播图 */
-.gp6-banner-container{
-    width: 1080px;
-    height: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
+
 .gp6-banner-wrapper{
     width: 1080px;
     height: 360px;
@@ -531,8 +543,11 @@
 .category-recommend-1 ul{
     height: 280px;
 }
+.category-recommend-1 ul li:first-child{
+    width: 620px;
+}
 .category-recommend-1 ul li {
-    width: 180px;
+    width: 89px;
     height: 280px;
     float: left;
     position: relative;
@@ -540,6 +555,9 @@
 .category-recommend-1 ul li div {
     width: 100%;
     height: 280px;
+}
+.category-recommend-1 ul li:first-child div.des{
+    background: rgba(0,0,0,0); 
 }
 .category-recommend-1 ul li div.des {
     position: absolute;

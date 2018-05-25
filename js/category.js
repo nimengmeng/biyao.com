@@ -59,7 +59,7 @@ $(function(){
            //拼接字符串
            this.html = "<ul>";
            this.json.forEach(function(item){
-            console.log(item);
+            //console.log(item);
             this.html += `<li>
                             <a href="#">
                                 <img src=${item.image} />
@@ -119,27 +119,29 @@ $(function(){
 		    //我怎么知道当前点击的元素是谁;
             var target = event.target || event.srcElement;
             var goodsId = $(target).attr("data-id");
+            // console.log(goodsId);
+            
             //id获取 ---end;
 
             //操作cookie存入购物车
             if(!$.cookie("shopCar")){
-                var shopCarArray = [
+                var obj = [
                     {
                         id:goodsId,
                         num:1
                     }
                 ]
-                $.cookie("shopCar",JSON.stringify(shopCarArray));
-                console.log($.cookie("shopCar"));
+                $.cookie("shopCar",JSON.stringify(obj));
+                // console.log($.cookie("shopCar"));
                 return 0;
             }
             //其余次数进行购物车添加;
-            var shopCarString = $.cookie("shopCar");
+            var shopCarString = $.cookie("shopCar");          
             var shopCarArray = JSON.parse(shopCarString);
 
             var hasItem = false;
             shopCarArray.forEach(function(item){
-                if(item.id = goodsId){
+                if(item.id == goodsId){
                     //如果购物车列表之中有当前项，让商品数量自增
                     item.num ++;
                     hasItem = true;
@@ -152,6 +154,8 @@ $(function(){
                 }
                 shopCarArray.push(item)
             }
+            // console.log( $.cookie("shopCar"));
+            
             $.cookie("shopCar",JSON.stringify(shopCarArray));
        },
        changeNum(){
